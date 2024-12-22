@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <h1 style="cursor: pointer;">Gautam</h1>
+        <div style="cursor: pointer;" id="nav-right">
+            <h3>Home</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div id="h-left">
+                    <div style="margin-top: 18px;">
+                        <h2><u>Let's Get Started!</u></h2>
+                    </div>
+
+                <form id="user-form">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="password">Enter password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="date">Select date</label>
+                    <input type="date" name="date" id="date">
+            
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="2"></textarea>
+
+                    <div>
+                        <input type="checkbox" name="check" id="check" required>
+                    <label for="check">Agree terms & conditions</label>
+                    </div>
+                    
+                    <button type="button" id="btn">Save Details</button>
+                </form>
+                
+        </div>
+
+        <div id="h-right"></div>
+    </div>
+
+    <div id="page-2">
+        <div class="output" id="output">
+            <h3>JSON Output:</h3>
+            <div id="jsonOutput"></div>
+            <pre id="jsonOutput"></pre>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
